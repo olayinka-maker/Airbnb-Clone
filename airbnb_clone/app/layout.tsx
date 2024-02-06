@@ -12,7 +12,7 @@ const font = Nunito({
 
 export const metadata: Metadata = {
   title: "Airbnb ",
-  description: "Airbnb Clone",
+  description: "Airbnb Clne",
 };
 
 export default function RootLayout({
@@ -22,8 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <body className={font.className}>
       <Navbar/>
-      <body className={font.className}>{children}</body>
+        {children}
+        </body>
     </html>
   );
 }
